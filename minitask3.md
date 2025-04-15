@@ -58,8 +58,7 @@ flowchart TD
 
 #### Menghitung Luas
 ```
-DECLARE r: INTEGER
-DECLARE phi: INTEGER 
+DECLARE r: REAL
 
 INPUT r
 
@@ -75,8 +74,7 @@ OUTPUT Result
 
 #### Menghitung Keliling
 ```
-DECLARE r: INTEGER
-DECLARE phi: INTEGER 
+DECLARE r: REAL
 
 INPUT r
 
