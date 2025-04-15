@@ -59,6 +59,7 @@ flowchart TD
 #### Menghitung Luas
 ```
 DECLARE r: REAL
+DECLARE Result: REAL
 
 INPUT r
 
@@ -75,6 +76,7 @@ OUTPUT Result
 #### Menghitung Keliling
 ```
 DECLARE r: REAL
+DECLARE Result: REAL
 
 INPUT r
 
