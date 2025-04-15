@@ -2,8 +2,8 @@
 
 1. mulai
 2. masukkan angka sebagai "X"
-3. jika "X" tersebut habis dibagi dua, "X" adalah angka genap
-4. jika tidak, "X" Adalah angka ganjil 
+3. jika "X" tersebut habis dibagi dua, "X" adalah Angka Genap
+4. jika tidak, "X" Adalah Angka Ganjil 
 5. selesai
 
 ## Flowchart ganjil genap
@@ -13,11 +13,11 @@
 ```mermaid
 flowchart TD
     A@{shape: circle, label: "start"}
-    B@{shape: lean-r, label: "input X"}
+    B@{shape: lean-r, label: "`X`"}
     C@{ shape: diamond, label: "X % 2 == 0" }
-    D@{shape: lean-r, label: " 'Genap' "}
-    E@{shape: lean-r, label: " 'Ganjil' "}
-    X@{shape: dbl-circ, label: "stop"}
+    D@{shape: lean-r, label: " 'Angka Genap' "}
+    E@{shape: lean-r, label: " 'Angka Ganjil' "}
+    X@{shape: dbl-circ, label: "end"}
 
     A --> B
     B --> C
@@ -32,17 +32,15 @@ flowchart TD
 
 ```
 DECLARE X: INTEGER
-DECLARE Genap: REAL
-DECLARE Ganjil: REAL
+DECLARE Result: STRING
 
 INPUT X
 
 IF X % 2 == 0 THEN
-    Ganjil <- X, "adalah angka Ganjil"
+    Result <- " adalah angka Genap"
 ELSE
-    Genap <- X, "adalah angka Genap"
+    Result <- " adalah angka Ganjil"
 ENDIF
 
-OUTPUT Ganjil
-OUTPUT Genap
+OUTPUT X, Result
 ```
