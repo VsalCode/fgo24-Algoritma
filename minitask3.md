@@ -53,3 +53,39 @@ flowchart TD
     F --> X
 
 ```
+
+## Pseudo-code
+
+#### Menghitung Luas
+```
+DECLARE r: INTEGER
+DECLARE phi: INTEGER 
+
+INPUT r
+
+IF r % 7 = 0 THEN
+    Result <- 22/7 x r x r  
+ELSE
+    Result <- 3,14 x r x r  
+ENDIF
+
+OUTPUT Result
+
+```
+
+#### Menghitung Keliling
+```
+DECLARE r: INTEGER
+DECLARE phi: INTEGER 
+
+INPUT r
+
+IF r % 7 = 0 THEN
+    Result <- 2 x 22/7 x r  
+ELSE
+    Result <- 2 x 2,14 x r  
+ENDIF
+
+OUTPUT Result
+
+```
