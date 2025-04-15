@@ -1,9 +1,9 @@
 ## Membuat algoritma ganjil dan genap
 
 1. mulai
-2. masukkan angka
-3. jika angka tersebut habis dibagi dua, angka genap
-4. jika tidak, angka ganjil 
+2. masukkan angka sebagai "X"
+3. jika "X" tersebut habis dibagi dua, "X" adalah angka genap
+4. jika tidak, "X" Adalah angka ganjil 
 5. selesai
 
 ## Flowchart ganjil genap
@@ -31,16 +31,16 @@ flowchart TD
 ## Pseudo-code
 
 ```
-DECLARE Angka: INTEGER
+DECLARE X: INTEGER
 DECLARE Genap: REAL
 DECLARE Ganjil: REAL
 
-INPUT Angka
+INPUT X
 
-IF Angka % 2 == 0 THEN
-    Ganjil <- Angka, "adalah angka Ganjil"
+IF X % 2 == 0 THEN
+    Ganjil <- X, "adalah angka Ganjil"
 ELSE
-    Genap <- Angka, "adalah angka Genap"
+    Genap <- X, "adalah angka Genap"
 ENDIF
 
 OUTPUT Ganjil
