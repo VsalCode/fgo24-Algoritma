@@ -16,7 +16,7 @@
 flowchart TD
     A@{shape: circle, label: "start"}
     B@{shape: lean-r, label: "input r"}
-    C@{shape: diamond, label: "r % 7 = 0"}
+    C@{shape: diamond, label: "r % 7 == 0"}
     D@{shape: rect, label: "phi = 22/7"}
     E@{shape: rect, label: "phi = 3,14"}
     F@{shape: rect, label: "phi x r x r"}
@@ -38,7 +38,7 @@ flowchart TD
 flowchart TD
     A@{shape: circle, label: "start"}
     B@{shape: lean-r, label: "input r"}
-    C@{shape: diamond, label: "r % 7 = 0"}
+    C@{shape: diamond, label: "r % 7 == 0"}
     D@{shape: rect, label: "phi = 22/7"}
     E@{shape: rect, label: "phi = 3,14"}
     F@{shape: rect, label: "2 x phi x r"}
