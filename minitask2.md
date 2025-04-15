@@ -32,8 +32,8 @@ flowchart TD
 
 ```
 DECLARE Angka: INTEGER
-DECLARE Genap: STRING
-DECLARE Ganjil: STRING
+DECLARE Genap: REAL
+DECLARE Ganjil: REAL
 
 INPUT Angka
 
