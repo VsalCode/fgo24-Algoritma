@@ -1,9 +1,55 @@
 ## Menghitung Luas dan Keliling Lingkaran
 
+#### Deskriptif :
+
 1. Mulai
-2. buat variabel "r" yang menampung jari-jari dari sebuah lingkaran
-3. buat variable "phi" yang menampung nilai "3,14"
-4. buat 2 buah variable yang bernama "luas" dan "keliling"
-5. di dalam variable "luas",berisi perintah perkalian yang mengambil nilai dari variable "phi" dikali dengan jari-jari dikali jari-jari lagi yang diambil dari variable "r"
-6. di dalam variable "keliling", berisi perintah angka 2 dikalikan dengan nilai dari variable "phi", dikalikan dengan nilai dari variable "r"
-7. selesai
+2. Masukkan nilai r (jari-jari)
+3. jika r habis dibagi 7 maka, phi = 22/7
+4. jika tidak, maka phi = 3,14
+5. hitung luas lingkaran dengan phi x r  x r
+5. hitung keliling lingkaran dengan 2 x phi x r
+6. selesai
+
+#### Flowchart menghitung luas
+
+```mermaid
+flowchart TD
+    A@{shape: circle, label: "start"}
+    B@{shape: lean-r, label: "input r"}
+    C@{ shape: diamond, label: "r % 7 = 0" }
+    D@{ shape: rect, label: "phi = 22/7" } 
+    E@{ shape: rect, label: "phi = 3,14" } 
+    F@{ shape: rect, label: "phi x r x r" } 
+    X@{shape: dbl-circ, label: "stop"}
+
+    A --> B
+    B --> C
+    C -- True --> D
+    C -- False --> E
+    D --> F
+    E --> F
+    F --> X
+
+```
+
+#### Flowchart menghitung keliling
+
+```mermaid
+flowchart TD
+    A@{shape: circle, label: "start"}
+    B@{shape: lean-r, label: "input r"}
+    C@{ shape: diamond, label: "r % 7 = 0" }
+    D@{ shape: rect, label: "phi = 22/7" } 
+    E@{ shape: rect, label: "phi = 3,14" } 
+    F@{ shape: rect, label: "2 x phi x r" } 
+    X@{shape: dbl-circ, label: "stop"}
+
+    A --> B
+    B --> C
+    C -- True --> D
+    C -- False --> E
+    D --> F
+    E --> F
+    F --> X
+
+```
