@@ -13,7 +13,7 @@
 ```mermaid
 flowchart TD
     A@{shape: circle, label: "start"}
-    B@{shape: lean-r, label: "`X`"}
+    B@{shape: lean-r, label: "X"}
     C@{ shape: diamond, label: "X % 2 == 0" }
     D@{shape: lean-r, label: " 'Angka Genap' "}
     E@{shape: lean-r, label: " 'Angka Ganjil' "}
