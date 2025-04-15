@@ -1,37 +1,55 @@
-## mengubah algoritma celcius 
+## Algoritma Konversi Suhu 
 
 #### Deklaratif
 
 1. mulai
-2. deklarasikan bahwa 0 derajat celcius = 32 fahrenheit
-3. deklarasikan bahwa 0 derajat celcius = 273 kelvin
-4. masukkan nilai suhu dalam bentuk celcius
-4. masukkan nilai suhu dalam bentuk celcius
+1. masukkan suhu sebagai "C"
+1. hitung F = (9/5) × C + 32
+1. hitung K = C + 273,15
+1. hitung R = (4/5) × C
+1. tampilkan hasil perhitungan dari F, K dan R
+1. selesai
 
-
-#### Flowchart
+#### Flowchart pemilihan type
 
 ```mermaid
-flowchart TD
+flowchart LR
     A@{shape: circle, label: "start"}
-    B@{shape: lean-r, label: "input suhu(celcius)"}
-    C@{ shape: diamond, label: "pilih opsi konversi" }
-    D@{ shape: rect, label: "0 C = 32 fahrenheit" }
-    E@{ shape: rect, label: "0 C = 273 kelvin" }
-    F@{ shape: rect, label: "0 C = 0,8 reamur" }
-    G@{ shape: lean-r, label: "output suhu konversi" }
-    X@{shape: dbl-circ, label: "stop"}
+    input@{shape: lean-r, label: "input: C"}
+    f@{shape: rectangle, label: "F = (9/5) × °C + 32"}
+    k@{shape: rectangle, label: "K = °C + 273,15"}
+    r@{shape: rectangle, label: "R = (4/5) × °C"}
+    output@{shape: lean-r, label: "output: 'F','K','R'"}
+    X@{shape: dbl-circ, label: "end"}
 
-    A --> B
-    B --> C
-    C --> D
-    C --> E
-    C --> F
-    D --> G
-    E --> G
-    F --> G
-    G --> X
+
+    A --> input
+    input --> f 
+    input --> k 
+    input --> r 
+
+    f --> output
+    k --> output
+    r --> output
+
+    output --> X
 
 ```
 
+## Pseudo-code
 
+```
+DECLARE Celcius: REAL
+DECLARE Kelvin: REAL
+DECLARE Reamur: REAL
+DECLARE Fahrenheit: REAL
+
+INPUT Celcius
+
+Fahrenheit <- (9/5) × Celcius
+Kelvin <- Celcius + 273,15
+Reamur <- (4/5) × Celcius
+
+
+OUTPUT "Hasilnya, f: ", Fahrenheit, " k : ", Kelvin, " r : ", Reamur
+```
