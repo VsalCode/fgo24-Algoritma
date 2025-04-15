@@ -14,7 +14,7 @@
 flowchart TD
     A@{shape: circle, label: "start"}
     B@{shape: lean-r, label: "input r"}
-    C@{ shape: diamond, label: "X % 2 = 0" }
+    C@{ shape: diamond, label: "X % 2 == 0" }
     D@{shape: lean-r, label: " 'Genap' "}
     E@{shape: lean-r, label: " 'Ganjil' "}
     X@{shape: dbl-circ, label: "stop"}
