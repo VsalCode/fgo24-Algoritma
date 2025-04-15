@@ -18,7 +18,7 @@ flowchart TD
     C@{ shape: diamond, label: "pilih opsi konversi" }
     D@{ shape: rect, label: "0 C = 32 fahrenheit" }
     E@{ shape: rect, label: "0 C = 273 kelvin" }
-    F@{ shape: rect, label: "0 C = 273 kelvin" }
+    F@{ shape: rect, label: "0 C = 0,8 reamur" }
     G@{ shape: lean-r, label: "output suhu konversi" }
     X@{shape: dbl-circ, label: "stop"}
 
