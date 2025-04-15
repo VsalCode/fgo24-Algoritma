@@ -28,3 +28,21 @@ flowchart TD
     E --> X
 
 ```
+## Pseudo-code
+
+```
+DECLARE Angka: INTEGER
+DECLARE Genap: STRING
+DECLARE Ganjil: STRING
+
+INPUT Angka
+
+IF Angka % 2 == 0 THEN
+    Ganjil <- Angka, "adalah angka Ganjil"
+ELSE
+    Genap <- Angka, "adalah angka Genap"
+ENDIF
+
+OUTPUT Ganjil
+OUTPUT Genap
+```
