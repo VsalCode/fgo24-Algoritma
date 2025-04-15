@@ -16,9 +16,9 @@
 flowchart LR
     A@{shape: circle, label: "start"}
     input@{shape: lean-r, label: "input: C"}
-    f@{shape: rectangle, label: "F = (9/5) × °C + 32"}
-    k@{shape: rectangle, label: "K = °C + 273,15"}
-    r@{shape: rectangle, label: "R = (4/5) × °C"}
+    f@{shape: rectangle, label: "F = (9/5) × C + 32"}
+    k@{shape: rectangle, label: "K = C + 273,15"}
+    r@{shape: rectangle, label: "R = (4/5) × C"}
     output@{shape: lean-r, label: "output: 'F','K','R'"}
     X@{shape: dbl-circ, label: "end"}
 
@@ -39,17 +39,17 @@ flowchart LR
 ## Pseudo-code
 
 ```
-DECLARE Celcius: REAL
-DECLARE Kelvin: REAL
-DECLARE Reamur: REAL
-DECLARE Fahrenheit: REAL
+DECLARE C: REAL
+DECLARE K: REAL
+DECLARE R: REAL
+DECLARE F: REAL
 
-INPUT Celcius
+INPUT C
 
-Fahrenheit <- (9/5) × Celcius
-Kelvin <- Celcius + 273,15
-Reamur <- (4/5) × Celcius
+F <- (9/5) × C
+K <- C + 273,15
+R <- (4/5) × C
 
 
-OUTPUT "Hasilnya, f: ", Fahrenheit, " k : ", Kelvin, " r : ", Reamur
+OUTPUT "Hasilnya, fahrenheit: ", F, " kelvin : ", K, " reamur : ", R
 ```
